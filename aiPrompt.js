@@ -43,6 +43,7 @@ export async function sendPrompt(userPrompt) {
     }
     catch (error) {
         console.log(error);
+        return { botResponse: "❌ Uh-oh, that failed. Try one more time!" };
     }
 }
 
