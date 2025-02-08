@@ -6,7 +6,7 @@ import { REST, Routes, ApplicationCommandOptionType } from 'discord.js';
 const commands = [
     {
         name: "ask",
-        description: "Asks a question to berry",
+        description: "Asks a question stella",
         options: [
             {
                 name: 'question',
