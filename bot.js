@@ -21,16 +21,22 @@ client.on(Events.InteractionCreate, async (interaction) => {
   if (!interaction.isChatInputCommand()) return;
 
   if (interaction.commandName === 'ask') {
+    try {
+      await interaction.deferReply();
 
-    await interaction.deferReply();
+      const prompt = interaction.options._hoistedOptions[0].value;   //to understand this do -> console.log(interaction.options)
+      const response = await sendPrompt(prompt);
 
-    const prompt = interaction.options._hoistedOptions[0].value;   //to understand this do -> console.log(interaction.options)
-    const response = await sendPrompt(prompt);
+      await interaction.editReply(response.botResponse[0]);
 
-    await interaction.editReply(response.botResponse[0]);
+      for (let chunk = 1; chunk < response.botResponse.length; chunk++) {
+        await interaction.followUp(response.botResponse[chunk]); //send the rest of the chunks
+      }
 
-    for (let chunk = 1; chunk < response.botResponse.length; chunk++) {
-      await interaction.followUp(response.botResponse[chunk]); //send the rest of the chunks
+    }
+    catch (error) {
+      console.log("Oops! Error Handling Interaction: ", error);
+      await interaction.editReply("❌ Uh-oh, that failed. Try one more time!");
     }
   }
 });
