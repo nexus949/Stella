@@ -6,7 +6,7 @@
 
 #### [Invite Stella]() to your server 🚀
 
-### ✨ Features
+## ✨ Features
 - AI-Powered Responses : Generates text and answers questions using Google Gemini 1.5 Flash-8B.
 
 - Code Assistance : Helps with coding, debugging, and explaining programming concepts.
@@ -19,7 +19,7 @@
 
 - Lightweight & Fast : Built for quick responses with minimal resource usage.
 
-### 📦 Installation
+## 📦 Installation
 #### Want to run Stella locally ? 
 Here's what you'll need and how to do it.
 
@@ -58,7 +58,7 @@ node botCommands.js
 nodemon bot.js
 ```
 
-### ℹ Additional Information
+## ℹ Additional Information
 - Stella is built using the Discord.js library to handle interactions seamlessly. For registering new commands or troubleshooting, refer to their official documentation.
 
 - You can integrate any other AI service, but setup requirements may vary, and it will be your sole responsibility to configure it correctly.
