@@ -65,6 +65,8 @@ nodemon bot.js
 
 - By default, Stella uses Google Gemini’s free-tier API, but you are free to upgrade to a higher tier if needed.
 
-- Customization is encouraged! You can tweak Stella’s behavior, responses, and AI model settings as per your needs.
+- Customization is encouraged! By default Stella *does not retain any context* due to storage limitations and to ensure fast performance. You are free tweak Stella’s behavior, responses, and AI model settings as per your needs.
 
 - Ensure you have the necessary API keys and permissions when making modifications to avoid service disruptions.
+
+- The profile picture used for Stella is sourced from Pinterest; credits are attributed to the original creator.
