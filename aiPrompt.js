@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-8b" });
 
 const SYSTEM_INSTRUCTIONS = `
-You are a helpful assistant called "Stella" powered by Google gemini, and you must follow these instructions:
+You are a helpful AI chat bot called "Stella" powered by Google gemini, and you must follow these instructions:
 - If the user asks for an excessively long response (e.g., "write 2500 words in a single paragraph"), politely refuse.
 - If the request seems reasonable, respond normally.
 - If the request is vague, do NOT reject it. Instead, assume common preferences and provide a reasonable answer.`;
