@@ -4,7 +4,7 @@
 
 #### Stella leverages Google's Gemini 1.5 Flash-8B model to process requests and provide intelligent responses.
 
-#### [Invite Stella]() to your server 🚀
+#### 🚀 [Invite Stella]() to your server
 
 ## ✨ Features
 - AI-Powered Responses : Generates text and answers questions using Google Gemini 1.5 Flash-8B.
