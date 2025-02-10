@@ -58,7 +58,7 @@ node botCommands.js
 nodemon bot.js
 ```
 
-## ℹ Additional Information
+## ℹ Additional Information and Credits
 - Stella is built using the Discord.js library to handle interactions seamlessly. For registering new commands or troubleshooting, refer to their official documentation.
 
 - You can integrate any other AI service, but setup requirements may vary, and it will be your sole responsibility to configure it correctly.
@@ -69,4 +69,6 @@ nodemon bot.js
 
 - Ensure you have the necessary API keys and permissions when making modifications to avoid service disruptions.
 
-- The profile picture used for Stella is sourced from Pinterest; credits are attributed to the original creator.
+- The profile picture used for Stella is sourced from [Pinterest](https://www.pinterest.com/); credits are attributed to the original creator.
+
+- The profile banner used for Stella is made using [Creative](https://auto.creavite.co/).
