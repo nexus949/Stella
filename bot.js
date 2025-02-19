@@ -35,8 +35,14 @@ client.on(Events.InteractionCreate, async (interaction) => {
 
     }
     catch (error) {
-      console.log("Oops! Error Handling Interaction: ", error);
-      await interaction.editReply("❌ Uh-oh, that failed. Try one more time!");
+      console.error("Error handling interaction:", error);
+
+      if (interaction.replied || interaction.deferred) {
+        await interaction.editReply("❌ Uh-oh, that failed. Try one more time!");
+      } 
+      else {
+        await interaction.reply("❌ Uh-oh, that failed. Try one more time!");
+      }
     }
   }
 });
